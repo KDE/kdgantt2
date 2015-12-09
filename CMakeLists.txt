@@ -21,14 +21,13 @@ include(ECMAddTests)
 
 
 set(KF5_VERSION "5.16.0")
-set(KDEPIM_LIB_VERSION "5.1.42")
+set(KDGANTS_LIB_VERSION "5.1.42")
 set(QT_REQUIRED_VERSION "5.4.0")
-set(KMIME_LIB_VERSION "4.87.0")
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test PrintSupport)
 find_package(KF5I18n ${KF5_VERSION} CONFIG REQUIRED)
 
-ecm_setup_version(${KDEPIM_LIB_VERSION} VARIABLE_PREFIX KDGANTT2
+ecm_setup_version(${KDGANTS_LIB_VERSION} VARIABLE_PREFIX KDGANTT2
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kdgantt2_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5KDGantt2ConfigVersion.cmake"
                         SOVERSION 5
