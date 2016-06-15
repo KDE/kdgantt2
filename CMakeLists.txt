@@ -21,7 +21,7 @@ include(ECMAddTests)
 
 
 set(KF5_VERSION "5.19.0")
-set(KDGANTS_LIB_VERSION "5.2.2")
+set(KDGANTS_LIB_VERSION "5.2.3")
 set(QT_REQUIRED_VERSION "5.4.0")
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets Test PrintSupport)
