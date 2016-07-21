@@ -1,4 +1,5 @@
-add_definitions(-DTRANSLATION_DOMAIN=\"kdgantt2\")
+ecm_create_qm_loader(libkdgantt2_QM_LOADER kdgantt2)
+
 # Those paths need to be absolute since this file is included from other CMakeLists.txt files
 set(libkdgantt2_SRCS
 kdganttabstractgrid.cpp
@@ -21,6 +22,7 @@ kdganttstyleoptionganttitem.cpp
 kdganttsummaryhandlingproxymodel.cpp
 kdgantttreeviewrowcontroller.cpp
 kdganttview.cpp
+${libkdgantt2_QM_LOADER}
 )
 
 ecm_qt_declare_logging_category(libkdgantt2_SRCS HEADER kdgantt_debug.h IDENTIFIER KDGANTT_LOG CATEGORY_NAME log_kdgantt)
