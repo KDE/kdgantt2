@@ -21,7 +21,7 @@ include(ECMQtDeclareLoggingCategory)
 include(ECMAddTests)
 include(ECMPoQmTools)
 
-set(PIM_VERSION "5.2.80")
+set(PIM_VERSION "5.2.90")
 
 
 set(KDGANTS_LIB_VERSION ${PIM_VERSION})
